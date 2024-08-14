@@ -15,30 +15,31 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <div class="container header-container">
         <!--<a href="#"><img src="" alt="">antools.</a>-->
-        <div class="box">
             <a href="#"><img src="pictures/antools-logo.svg" alt="logo" class="header-logo">antools.</a>
             <nav>
                 <ul class="nav-list">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Categories</a>
                         <button type="button" class="header-vector">
-                            <img src="pictures/vector.svg" alt="vector">
                         </button>
                     </li>
                     <li><a href="#">My Collections</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
             </nav>
+            <div class="">
             <button type="button" class="header-login-btn">Login</button>
             <button type="button" class="header-signup-btn">Sign Up</button>
+            </div>
         </div>
     </header>
     <main>
         <!-- section hero -->
         <section class="hero">
-            <div class="hero-container">
+            <div class="container">
                 <h1 class="hero-title">Awesome tools for
                     Designer & Developer<span class="orange">.</span></h1>
                 <p class="hero-text">Antool is a web collection of information on paid or free Design and Development
@@ -48,12 +49,17 @@
                     <input type="search" class="hero-input" placeholder="find more than 430+ tools..."  required/>
                     <button class="hero-btn-search" type="submit">Search</button>
                     </form>
+                    <ul class="hero-social-app">
+                        <li><a href="#"><img src="pictures/facebook.svg" alt="facebook"></a></li>
+                        <li><a href="#"><img src="pictures/instagram.svg" alt="instagram"></a></li>
+                        <li><a href="#"><img src="pictures/twitter.svg" alt="twitter"></a></li>
+                    </ul>
                 </div>
             </div>
         </section>
         <!-- popular tools -->
         <section class="popular">
-            <div class="container-popular">
+            <div class="container">
             <h2>Most Popular Tools</h2>
             <p>Tools for the best Designers and Developers most popularly used in the world</p>
             <ul class="popular-toold-list">
@@ -62,62 +68,62 @@
                     <h3>FIGMA</h3>
                     <p>Free</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button"><img src="#" alt="like"></button>
-                    <button type="button"><img src="#" alt="download"></button>
-                    <button type=submit"#"><a href="">Visit</a></button>
+                    <button type="button" class="like"></button>
+                    <button type="button" class="download"></button>
+                    <a href="" class="visit">Visit</a>
                 </li>
                 <li>
                     <img src="pictures/logos_sketch.png" alt="sketch icon" class="main-tools-icon">
                     <h3>Sketch</h3>
                     <p>Trial & Paid</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button"><img src="#" alt="like"></button>
-                    <button type="button"><img src="#" alt="download"></button>
-                    <button type=submit"#"><a href="">Visit</a></button>
+                    <button type="button" class="like"></button>
+                    <button type="button" class="download"></button>
+                    <a href="" class="visit">Visit</a>
                 </li>
                 <li>
                     <img src="pictures/logos_visual-studio-code.png" alt="vsc icon" class="main-tools-icon">
                     <h3>Visiual Studio Code</h3>
                     <p>Free</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button"><img src="#" alt="like"></button>
-                    <button type="button"><img src="#" alt="download"></button>
-                    <button type=submit"#"><a href="">Visit</a></button>
+                    <button type="button" class="like"></button>
+                    <button type="button" class="download"></button>
+                    <a href="" class="visit">Visit</a>
                 </li>
                 <li>
                     <img src="pictures/notion.png" alt="notion icon" class="main-tools-icon">
                     <h3>Notion</h3>
                     <p>Free & Paid</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button"><img src="#" alt="like"></button>
-                    <button type="button"><img src="#" alt="download"></button>
-                    <button type=submit"#"><a href="">Visit</a></button>
+                    <button type="button" class="like"></button>
+                    <button type="button" class="download"></button>
+                    <a href="" class="visit">Visit</a>
                 </li>
                 <li>
                     <img src="pictures/grommet-icons_slack.png" alt="slack icon" class="main-tools-icon">
                     <h3>Slack</h3>
                     <p>Free & Paid</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button"><img src="#" alt="like"></button>
-                    <button type="button"><img src="#" alt="download"></button>
-                    <button type=submit"#"><a href="">Visit</a></button>
+                    <button type="button" class="like"></button>
+                    <button type="button" class="download"></button>
+                    <a href="" class="visit">Visit</a>
                 </li>
                 <li>
                     <img src="pictures/logos_invision-icon.png" alt="invision icon" class="main-tools-icon">
                     <h3>Invision</h3>
                     <p>Free & Paid</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button"><img src="#" alt="like"></button>
-                    <button type="button"><img src="#" alt="download"></button>
-                    <button type=submit"#"><a href="">Visit</a></button>
+                    <button type="button" class="like"></button>
+                    <button type="button" class="download"></button>
+                    <a href="" class="visit">Visit</a>
                 </li>
             </ul>
             <button type="button">Load more</button>
             </div>
         </section>
         <section class="brand">
-            <div class="container-brand">
-            <h3>Trusted more than 150+ brand</h3>
+            <div class="container">
+            <h2 class="brand-title">Trusted more than 150+ brand</h2>
             <ul class="main-company-list">
                 <li><img src="pictures/logos_microsoft.png" alt="microsoft logo"></li>
                 <li><img src="pictures/logos_google.png" alt="google logo"></li>
@@ -127,7 +133,7 @@
             </div>
         </section>
         <section class="new-tools">
-            <div class="container-newtools">
+            <div class="container">
             <h2>Newcomer Tools</h2>
             <p>Wow! see the latest update of the most recommended tools from reliable designers and developers</p>
             <button type="button">Explore more</button>
@@ -137,42 +143,42 @@
                     <h3>Zeplin</h3>
                     <h4>Free & Paid</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button"><img src="#" alt="like"></button>
-                    <button type="button"><img src="#" alt="download"></button>
-                    <button type="submit">Visit</button>
+                    <button type="button" class="like"></button>
+                    <button type="button" class="download"></button>
+                    <a href="" class="visit">Visit</a>
                 </li>
                 <li>
                     <img src="pictures/jb_phpstorm.png" alt="phpstorm logo">
                     <h3>PHPStorm</h3>
                     <h4>Free</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button"><img src="#" alt="like"></button>
-                    <button type="button"><img src="#" alt="download"></button>
-                    <button type="submit">Visit</button>
+                    <button type="button" class="like"></button>
+                    <button type="button" class="download"></button>
+                    <a href="" class="visit">Visit</a>
                 </li>
                 <li>
                     <img src="pictures/jb_toolbox_app.png" alt="toolbox logo">
                     <h3>Toolbox</h3>
                     <h4>Free</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button"><img src="#" alt="like"></button>
-                    <button type="button"><img src="#" alt="download"></button>
-                    <button type="submit">Visit</button>
+                    <button type="button" class="like"></button>
+                    <button type="button" class="download"></button>
+                    <a href="" class="visit">Visit</a>
                 </li>
                 <li>
                     <img src="pictures/procreate.png" alt="procreate logo">
                     <h3>Procreate</h3>
                     <h4>Paid</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button"><img src="#" alt="like"></button>
-                    <button type="button"><img src="#" alt="download"></button>
-                    <button type="submit">Visit</button>
+                    <button type="button" class="like"></button>
+                    <button type="button" class="download"></button>
+                    <a href="" class="visit">Visit</a>
                 </li>
             </ul>
             </div>
         </section>
         <section class="reviews">
-            <div class="container-reviews">
+            <div class="container">
             <img src="pictures/Ronalds.png" alt="Ronald Richards photo" style="width: 392px; height: 492px;"
                 class="Ronalds-photo">
             <h3 class="Ronalds-name">Ronald Richards</h3>
@@ -184,7 +190,7 @@
             </div>
         </section>
         <section class="contributor">
-            <div class="container-contributor">
+            <div class="container">
             <h2 class="contributor-title">Become a contributor?</h2>
             <p class="contributor-text">Join us and get tips & tricks to become a great Designer and Developer</p>
             <form class="contributors-form">
@@ -196,7 +202,7 @@
         </section>
     </main>
     <footer>
-        <div class="footer">
+        <div class="container footer-container">
         <a href="#"><img src="pictures/antools-logo.svg" alt="logo" class="footer-logo">antools.</a>
         <h3>Copyright 2021. Antools</h3>
         <p>Antool is a web collection of information on paid or free Design and Development tools</p>
