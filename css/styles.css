@@ -12,7 +12,6 @@ body{
 .container {
     width: 1224px;
     margin: 0 auto;
-    outline: 1px solid rgb(255, 255, 255);
 }
     /* header */
 .header{
@@ -134,8 +133,22 @@ body{
     width: 65px;
     height: 63.82px;
 }
-.newcomer-tools-list{
+.new-tools-list{
     display: flex;
+}
+    /* popular */
+.popular{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.popular-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 120px;
+    column-gap: 25px;
+}
+.popular-item{
+    flex-basis: calc((100% - 50px) / 3);
 }
     /* brand */
 .brand-title{
@@ -145,13 +158,32 @@ body{
     font-size: 24px;
     line-height: 1.5;
 }
-.main-company-list{
+.brand-list{
     display: flex;
 }
+
     /* footer */
 .footer-logo{
     background-color: var(--background-button-color);
     width: 38px;
     height: 38px;
     border-radius: 8px;
+}
+/*  */
+.swiper {
+    width: 1200px;
+    height: 600px;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: var(--background-button-color);
+  }
+  
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    color: var(--background-button-color);
+  }
+.reviews-name{
+    color: white;
 }

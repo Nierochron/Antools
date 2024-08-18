@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -17,22 +18,20 @@
 <body>
     <header class="header">
         <div class="container header-container">
-        <!--<a href="#"><img src="" alt="">antools.</a>-->
-            <a href="#"><img src="pictures/antools-logo.svg" alt="logo" class="header-logo">antools.</a>
+            <a href="#" class="header-logo"><img src="pictures/antools-logo.svg" alt="logo">antools.</a>
             <nav>
                 <ul class="nav-list">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Categories</a>
-                        <button type="button" class="header-vector">
-                        </button>
+                        <button type="button" class="header-vector"></button>
                     </li>
                     <li><a href="#">My Collections</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
             </nav>
-            <div class="">
-            <button type="button" class="header-login-btn">Login</button>
-            <button type="button" class="header-signup-btn">Sign Up</button>
+            <div class="authorization-btns">
+                <button type="button" class="header-login-btn">Login</button>
+                <button type="button" class="header-signup-btn">Sign Up</button>
             </div>
         </div>
     </header>
@@ -40,16 +39,15 @@
         <!-- section hero -->
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">Awesome tools for
-                    Designer & Developer<span class="orange">.</span></h1>
+                <h1 class="hero-title">Awesome tools for Designer & Developer<span class="orange">.</span></h1>
                 <p class="hero-text">Antool is a web collection of information on paid or free Design and Development
                     tools</p>
                 <div class="hero-search-field">
                     <form class="hero-form">
-                    <input type="search" class="hero-input" placeholder="find more than 430+ tools..."  required/>
-                    <button class="hero-btn-search" type="submit">Search</button>
+                        <input type="search" class="hero-input" placeholder="find more than 430+ tools..." required />
+                        <button class="hero-btn-search" type="submit">Search</button>
                     </form>
-                    <ul class="hero-social-app">
+                    <ul class="hero-socials">
                         <li><a href="#"><img src="pictures/facebook.svg" alt="facebook"></a></li>
                         <li><a href="#"><img src="pictures/instagram.svg" alt="instagram"></a></li>
                         <li><a href="#"><img src="pictures/twitter.svg" alt="twitter"></a></li>
@@ -60,175 +58,227 @@
         <!-- popular tools -->
         <section class="popular">
             <div class="container">
-            <h2>Most Popular Tools</h2>
-            <p>Tools for the best Designers and Developers most popularly used in the world</p>
-            <ul class="popular-toold-list">
-                <li>
-                    <img src="pictures/grommet-icons_figma.png" alt="figma icon" class="main-tools-icon">
-                    <h3>FIGMA</h3>
-                    <p>Free</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button" class="like"></button>
-                    <button type="button" class="download"></button>
-                    <a href="" class="visit">Visit</a>
-                </li>
-                <li>
-                    <img src="pictures/logos_sketch.png" alt="sketch icon" class="main-tools-icon">
-                    <h3>Sketch</h3>
-                    <p>Trial & Paid</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button" class="like"></button>
-                    <button type="button" class="download"></button>
-                    <a href="" class="visit">Visit</a>
-                </li>
-                <li>
-                    <img src="pictures/logos_visual-studio-code.png" alt="vsc icon" class="main-tools-icon">
-                    <h3>Visiual Studio Code</h3>
-                    <p>Free</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button" class="like"></button>
-                    <button type="button" class="download"></button>
-                    <a href="" class="visit">Visit</a>
-                </li>
-                <li>
-                    <img src="pictures/notion.png" alt="notion icon" class="main-tools-icon">
-                    <h3>Notion</h3>
-                    <p>Free & Paid</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button" class="like"></button>
-                    <button type="button" class="download"></button>
-                    <a href="" class="visit">Visit</a>
-                </li>
-                <li>
-                    <img src="pictures/grommet-icons_slack.png" alt="slack icon" class="main-tools-icon">
-                    <h3>Slack</h3>
-                    <p>Free & Paid</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button" class="like"></button>
-                    <button type="button" class="download"></button>
-                    <a href="" class="visit">Visit</a>
-                </li>
-                <li>
-                    <img src="pictures/logos_invision-icon.png" alt="invision icon" class="main-tools-icon">
-                    <h3>Invision</h3>
-                    <p>Free & Paid</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button" class="like"></button>
-                    <button type="button" class="download"></button>
-                    <a href="" class="visit">Visit</a>
-                </li>
-            </ul>
-            <button type="button">Load more</button>
+                <h2>Most Popular Tools</h2>
+                <p>Tools for the best Designers and Developers most popularly used in the world</p>
+                <ul class="popular-list">
+                    <li class="popular-item">
+                        <img src="pictures/grommet-icons_figma.png" alt="figma icon" class="main-tools-icon">
+                        <h3>FIGMA</h3>
+                        <p>Free</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button type="button" class="like"></button>
+                        <button type="button" class="download"></button>
+                        <a href="" class="popular-btn-visit">Visit</a>
+                    </li>
+                    <li class="popular-item">
+                        <img src="pictures/logos_sketch.png" alt="sketch icon" class="main-tools-icon">
+                        <h3>Sketch</h3>
+                        <p>Trial & Paid</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button type="button" class="like"></button>
+                        <button type="button" class="download"></button>
+                        <a href="" class="popular-btn-visit">Visit</a>
+                    </li>
+                    <li class="popular-item">
+                        <img src="pictures/logos_visual-studio-code.png" alt="vsc icon" class="main-tools-icon">
+                        <h3>Visual Studio Code</h3>
+                        <p>Free</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button type="button" class="like"></button>
+                        <button type="button" class="download"></button>
+                        <a href="" class="popular-btn-visit">Visit</a>
+                    </li>
+                    <li class="popular-item">
+                        <img src="pictures/notion.png" alt="notion icon" class="main-tools-icon">
+                        <h3>Notion</h3>
+                        <p>Free & Paid</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button type="button" class="like"></button>
+                        <button type="button" class="download"></button>
+                        <a href="" class="popular-btn-visit">Visit</a>
+                    </li>
+                    <li class="popular-item">
+                        <img src="pictures/grommet-icons_slack.png" alt="slack icon" class="main-tools-icon">
+                        <h3>Slack</h3>
+                        <p>Free & Paid</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button type="button" class="like"></button>
+                        <button type="button" class="download"></button>
+                        <a href="" class="popular-btn-visit">Visit</a>
+                    </li>
+                    <li class="popular-item">
+                        <img src="pictures/logos_invision-icon.png" alt="invision icon" class="main-tools-icon">
+                        <h3>Invision</h3>
+                        <p>Free & Paid</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button type="button" class="like"></button>
+                        <button type="button" class="download"></button>
+                        <a href="" class="popular-btn-visit">Visit</a>
+                    </li>
+                </ul>
+                <button type="button">Load more</button>
             </div>
         </section>
-        <section class="brand">
+        <section class="brands">
             <div class="container">
-            <h2 class="brand-title">Trusted more than 150+ brand</h2>
-            <ul class="main-company-list">
-                <li><img src="pictures/logos_microsoft.png" alt="microsoft logo"></li>
-                <li><img src="pictures/logos_google.png" alt="google logo"></li>
-                <li><img src="pictures/logos_slack.png" alt="slack logo"></li>
-                <li><img src="pictures/logos_wordpress.png" alt="wordpress logo"></li>
-            </ul>
+                <h2 class="brands-title">Trusted more than 150+ brands</h2>
+                <ul class="brands-list">
+                    <li class="brands-item"><img src="pictures/logos_microsoft.png" alt="microsoft logo"></li>
+                    <li class="brands-item"><img src="pictures/logos_google.png" alt="google logo"></li>
+                    <li class="brands-item"><img src="pictures/logos_slack.png" alt="slack logo"></li>
+                    <li class="brands-item"><img src="pictures/logos_wordpress.png" alt="wordpress logo"></li>
+                </ul>
             </div>
         </section>
         <section class="new-tools">
             <div class="container">
-            <h2>Newcomer Tools</h2>
-            <p>Wow! see the latest update of the most recommended tools from reliable designers and developers</p>
-            <button type="button">Explore more</button>
-            <ul class="newcomer-tools-list">
-                <li>
-                    <img src="pictures/zeplin.png" alt="zeplin logo">
-                    <h3>Zeplin</h3>
-                    <h4>Free & Paid</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button" class="like"></button>
-                    <button type="button" class="download"></button>
-                    <a href="" class="visit">Visit</a>
-                </li>
-                <li>
-                    <img src="pictures/jb_phpstorm.png" alt="phpstorm logo">
-                    <h3>PHPStorm</h3>
-                    <h4>Free</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button" class="like"></button>
-                    <button type="button" class="download"></button>
-                    <a href="" class="visit">Visit</a>
-                </li>
-                <li>
-                    <img src="pictures/jb_toolbox_app.png" alt="toolbox logo">
-                    <h3>Toolbox</h3>
-                    <h4>Free</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button" class="like"></button>
-                    <button type="button" class="download"></button>
-                    <a href="" class="visit">Visit</a>
-                </li>
-                <li>
-                    <img src="pictures/procreate.png" alt="procreate logo">
-                    <h3>Procreate</h3>
-                    <h4>Paid</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button" class="like"></button>
-                    <button type="button" class="download"></button>
-                    <a href="" class="visit">Visit</a>
-                </li>
-            </ul>
+                <h2>Newcomer Tools</h2>
+                <p>Wow! See the latest update of the most recommended tools from reliable designers and developers</p>
+                <button type="button">Explore more</button>
+                <ul class="new-tools-list">
+                    <li class="new-tools-item">
+                        <img src="pictures/zeplin.png" alt="zeplin logo">
+                        <h3 class="new-tools-title">Zeplin</h3>
+                        <h4 class="new-tools-subtitle">Free & Paid</h4>
+                        <p class="new-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button type="button" class="like"></button>
+                        <button type="button" class="download"></button>
+                        <a href="" class="visit">Visit</a>
+                    </li>
+                    <li class="new-tools-item">
+                        <img src="pictures/jb_phpstorm.png" alt="phpstorm logo">
+                        <h3 class="new-tools-title">PHPStorm</h3>
+                        <h4 class="new-tools-subtitle">Free</h4>
+                        <p class="new-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button type="button" class="like"></button>
+                        <button type="button" class="download"></button>
+                        <a href="" class="visit">Visit</a>
+                    </li>
+                    <li class="new-tools-item">
+                        <img src="pictures/jb_toolbox_app.png" alt="toolbox logo">
+                        <h3 class="new-tools-title">Toolbox</h3>
+                        <h4 class="new-tools-subtitle">Free</h4>
+                        <p class="new-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button type="button" class="like"></button>
+                        <button type="button" class="download"></button>
+                        <a href="" class="visit">Visit</a>
+                    </li>
+                    <li class="new-tools-item">
+                        <img src="pictures/procreate.png" alt="procreate logo">
+                        <h3 class="new-tools-title">Procreate</h3>
+                        <h4 class="new-tools-subtitle">Paid</h4>
+                        <p class="new-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button type="button" class="like"></button>
+                        <button type="button" class="download"></button>
+                        <a href="" class="visit">Visit</a>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="reviews">
             <div class="container">
-            <img src="pictures/Ronalds.png" alt="Ronald Richards photo" style="width: 392px; height: 492px;"
-                class="Ronalds-photo">
-            <h3 class="Ronalds-name">Ronald Richards</h3>
-            <h4 class="Ronalds-name">Product Manager</h4>
-            <p class="Ronalds-bio">Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do.
-                Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia
-                incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia
-                excepteur non laboris id qui ad.</p>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide reviews-box">
+                            <div class="reviews-wrap">
+                                <img src="./pictures/Ronalds.png" alt="Review creator" />
+                                <div class="reviews-info">
+                                    <p class="reviews-name">Ronald Richards</p>
+                                    <p class="reviews-position">Product Manager</p>
+                                </div>
+                            </div>
+                            <p class="reviews-text">
+                                Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do.
+                                Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt
+                                Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex
+                                commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
+                            </p>
+                        </div>
+                        <div class="swiper-slide reviews-box">
+                            <div class="reviews-wrap">
+                                <img src="./pictures/Ronalds.png" alt="Review creator" />
+                                <div class="reviews-info">
+                                    <p class="reviews-name">Julia Kriwald</p>
+                                    <p class="reviews-position">HR Specialist</p>
+                                </div>
+                            </div>
+                            <p class="reviews-text">
+                                Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do.
+                                Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt
+                                Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex
+                                commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
+                            </p>
+                        </div>
+                        <div class="swiper-slide reviews-box">
+                            <div class="reviews-wrap">
+                                <img src="./pictures/Ronalds.png" alt="Review creator" />
+                                <div class="reviews-info">
+                                    <p class="reviews-name">John Mckenzie</p>
+                                    <p class="reviews-position">Designer Manager</p>
+                                </div>
+                            </div>
+                            <p class="reviews-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat accusamus
+                                praesentium ducimus. Hic quasi ipsa obcaecati temporibus odit provident asperiores
+                                veniam sint soluta, distinctio perferendis laboriosam odio nulla officia?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </section>
         <section class="contributor">
             <div class="container">
-            <h2 class="contributor-title">Become a contributor?</h2>
-            <p class="contributor-text">Join us and get tips & tricks to become a great Designer and Developer</p>
-            <form class="contributors-form">
-                <input class="contributors-input" type="text" placeholder="Enter your email..."/>
-    <button class="contributors-btn-serach" type="submit"> Search </button>
-            </form>
-            <button type="submit" class="contributor-button">Join Us</button>
+                <h2 class="contributor-title">Become a contributor?</h2>
+                <p class="contributor-text">Join us and get tips & tricks to become a great Designer and Developer</p>
+                <form class="contributors-form">
+                    <input class="contributors-input" type="text" placeholder="Enter your email..." />
+                    <button class="contributors-btn-search" type="submit">Search</button>
+                </form>
+                <button type="button" class="contributor-button">Join Us</button>
             </div>
         </section>
     </main>
     <footer>
         <div class="container footer-container">
-        <a href="#"><img src="pictures/antools-logo.svg" alt="logo" class="footer-logo">antools.</a>
-        <h3>Copyright 2021. Antools</h3>
-        <p>Antool is a web collection of information on paid or free Design and Development tools</p>
+            <a href="#"><img src="pictures/antools-logo.svg" alt="logo" class="footer-logo">antools.</a>
+            <h3>Copyright 2021. Antools</h3>
+            <p>Antool is a web collection of information on paid or free Design and Development tools</p>
+            <div class="Contacts">
             <ul>
-                <li><h3>Contact Us</h3></li>
-                <div class="Contacts">
+                <li>
+                    <h3>Contact Us</h3>
+                </li>
                     <li><a href="tel:+621987463">+621987463</a></li>
                     <li><a href="#">M Building, No.10 A</a></li>
-                    <li><a href="malito:antools@awesome.com">antools@awesome.com</a></li>
+                    <li><a href="mailto:antools@awesome.com">antools@awesome.com</a></li>
                 </div>
             </ul>
             <ul>
-                <li><h3>Categories</h3></li>
-                <li><p>
-                    Design
-                    Development
-                </p></li>
+                <li>
+                    <h3>Categories</h3>
+                </li>
+                <li>
+                    <p>
+                        Design
+                        Development
+                    </p>
+                </li>
             </ul>
-                <ul>
-                <li><h3>Company Info</h3></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Partnes</a></li>
-                    <li><a href="#">Blog</a></li>
-        </ul>
+            <ul>
+                <li>
+                    <h3>Company Info</h3>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
