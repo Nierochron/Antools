@@ -129,9 +129,12 @@ body{
 .hero-form{
     padding-bottom: 110px;
 }
-.main-tools-icon{
-    width: 65px;
-    height: 63.82px;
+.decoration{
+    background-image: url(../pictures/Illustration.png);
+    background-repeat: no-repeat;
+    height: 892px;
+    width: 589px;
+    display: inline-block;
 }
 .new-tools-list{
     display: flex;
@@ -149,6 +152,20 @@ body{
 }
 .popular-item{
     flex-basis: calc((100% - 50px) / 3);
+}
+.like{
+    background-image: url(../pictures/like.svg);
+    background-color: transparent;
+    height: 42px;
+    width: 42px;
+    display: inline-block;
+}
+.download{
+    background-image: url(../pictures/download.svg);
+    background-color: transparent;
+    height: 42px;
+    width: 42px;
+    display: inline-block;
 }
     /* brand */
 .brand-title{
