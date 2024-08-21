@@ -43,12 +43,10 @@
                 <h1 class="hero-title">Awesome tools for Designer & Developer<span class="orange">.</span></h1>
                 <p class="hero-text">Antool is a web collection of information on paid or free Design and Development
                     tools</p>
-                <div class="hero-search-field">
                     <form class="hero-form">
                         <input type="search" class="hero-input" placeholder="find more than 430+ tools..." required />
                         <button class="hero-btn-search" type="submit">Search</button>
                     </form>
-                </div>
                     <ul class="hero-socials">
                         <li class="socials-item"><a class="socials-link facebook" href="#"><img
                                     src="pictures/facebook.svg" alt="facebook"></a></li>
@@ -143,14 +141,14 @@
         </section>
         <section class="new-tools">
             <div class="container">
-                <h2>Newcomer Tools</h2>
-                <p>Wow! See the latest update of the most recommended tools from reliable designers and developers</p>
+                <h2 class="new-tools-title">Newcomer Tools</h2>
+                <p class="new-tools-desk">Wow! See the latest update of the most recommended tools from reliable designers and developers</p>
                 <button type="button">Explore more</button>
                 <ul class="new-tools-list">
                     <li class="new-tools-item">
                         <img src="pictures/zeplin.png" alt="zeplin logo">
-                        <h3 class="new-tools-title">Zeplin</h3>
-                        <h4 class="new-tools-subtitle">Free & Paid</h4>
+                        <h3 class="new-tools-subtitle">Zeplin</h3>
+                        <h4 class="new-tools-category">Free & Paid</h4>
                         <p class="new-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <button type="button" class="like"></button>
                         <button type="button" class="download"></button>
@@ -158,8 +156,8 @@
                     </li>
                     <li class="new-tools-item">
                         <img src="pictures/jb_phpstorm.png" alt="phpstorm logo">
-                        <h3 class="new-tools-title">PHPStorm</h3>
-                        <h4 class="new-tools-subtitle">Free</h4>
+                        <h3 class="new-tools-subtitle">PHPStorm</h3>
+                        <h4 class="new-tools-category">Free</h4>
                         <p class="new-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <button type="button" class="like"></button>
                         <button type="button" class="download"></button>
@@ -167,8 +165,8 @@
                     </li>
                     <li class="new-tools-item">
                         <img src="pictures/jb_toolbox_app.png" alt="toolbox logo">
-                        <h3 class="new-tools-title">Toolbox</h3>
-                        <h4 class="new-tools-subtitle">Free</h4>
+                        <h3 class="new-tools-subtitle">Toolbox</h3>
+                        <h4 class="new-tools-category">Free</h4>
                         <p class="new-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <button type="button" class="like"></button>
                         <button type="button" class="download"></button>
@@ -176,8 +174,8 @@
                     </li>
                     <li class="new-tools-item">
                         <img src="pictures/procreate.png" alt="procreate logo">
-                        <h3 class="new-tools-title">Procreate</h3>
-                        <h4 class="new-tools-subtitle">Paid</h4>
+                        <h3 class="new-tools-subtitle">Procreate</h3>
+                        <h4 class="new-tools-category">Paid</h4>
                         <p class="new-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <button type="button" class="like"></button>
                         <button type="button" class="download"></button>
@@ -257,36 +255,39 @@
             <a href="#"><img src="pictures/antools-logo.svg" alt="logo" class="footer-logo">antools.</a>
             <p class="footer-text">Copyright 2021. Antools</p>
             <p class="footer-description">Antool is a web collection of information on paid or free Design and Development tools</p>
-            <div class="Contacts">
-                <ul class="contact-us-list">
-                    <li class="contact-us-item">
-                        <h3 class="contact-us-title">Contact Us</h3>
-                    </li>
-                    <li class="contact-us-item"><a class="contact-us-contacts" href="tel:+621987463">+621987463</a></li>
-                    <li class="contact-us-item"><a class="contact-us-contacts" href="#">M Building, No.10 A</a></li>
-                    <li class="contact-us-item"><a class="contact-us-contacts" href="mailto:antools@awesome.com">antools@awesome.com</a></li>
-            </div>
-            </ul>
-            <ul class="categories-list">
-                <li class="categories-item">
-                    <h3 class="categories-title">Categories</h3>
-                </li>
-                <li class="categories-item">
-                    <p class="categories-text">
-                        Design
-                        Development
-                    </p>
-                </li>
-            </ul>
-            <ul class="company-info-list">
-                <li class="company-item">
-                    <h3 class="company-info-title">Company Info</h3>
-                </li>
-                <li class="company-item"><a class="company-links" href="#">About Us</a></li>
-                <li class="company-item"><a class="company-links" href="#">Our Partners</a></li>
-                <li class="company-item"><a class="company-links" href="#">Blog</a></li>
-            </ul>
-        </div>
+            <div class="footer-wrap">
+                <div class="footer-contact">
+                  <h3 class="contact-title">Contact Us</h3>
+                  <address>
+                    <ul class="contact-list">
+                      <li class="contact-item">
+                        <a href="tel:+621987463">+621987463</a>
+                      </li>
+                      <li class="contact-item">
+                        <a href=""> M Building, No.10 A</a>
+                      </li>
+                      <li class="contact-item">
+                        <a href="mailto:antools@awesome.com">antools@awesome.com</a>
+                      </li>
+                    </ul>
+                  </address>
+                </div>
+                <div class="footer-categories">
+                  <h3 class="categories-title">Categories</h3>
+                  <ul class="categories-list">
+                    <li class="categories-item">Design</li>
+                    <li class="categories-item">Development</li>
+                  </ul>
+                </div>
+                <div class="footer-info">
+                  <h3 class="info-title">Company Info</h3>
+                  <ul class="info-list">
+                    <li class="info-item">About Us</li>
+                    <li class="info-item">Our Partners</li>
+                    <li class="info-item">Blog</li>
+                  </ul>
+                </div>
+              </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
