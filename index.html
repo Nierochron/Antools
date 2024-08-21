@@ -19,15 +19,13 @@
 <body>
     <header class="header">
         <div class="container header-container">
-            <a href="#" class="header-logo"><img src="pictures/antools-logo.svg" alt="logo">antools.</a>
+            <a href="#" class="header-title"><img src="pictures/antools-logo.svg" alt="logo" class="header-logo">antools.</a>
             <nav>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#">Home</a></li>
-                    <li class="nav-item"><a href="#">Categories</a>
-                        <button type="button" class="header-vector"></button>
-                    </li>
-                    <li class="nav-item"><a href="#">My Collections</a></li>
-                    <li class="nav-item"><a href="#">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">My Collections</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
             <div class="authorization-btns">
@@ -129,7 +127,7 @@
             </div>
         </section>
         <section class="brands">
-            <div class="container">
+            <div class="container brand-container">
                 <h2 class="brands-title">Trusted more than 150+ brands</h2>
                 <ul class="brands-list">
                     <li class="brands-item"><img src="pictures/logos_microsoft.png" alt="microsoft logo"></li>
@@ -140,10 +138,10 @@
             </div>
         </section>
         <section class="new-tools">
-            <div class="container">
+            <div class="container new-tools-container">
                 <h2 class="new-tools-title">Newcomer Tools</h2>
                 <p class="new-tools-desk">Wow! See the latest update of the most recommended tools from reliable designers and developers</p>
-                <button type="button">Explore more</button>
+                <button type="button" class="new-tools-button">Explore more</button>
                 <ul class="new-tools-list">
                     <li class="new-tools-item">
                         <img src="pictures/zeplin.png" alt="zeplin logo">
@@ -152,7 +150,7 @@
                         <p class="new-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <button type="button" class="like"></button>
                         <button type="button" class="download"></button>
-                        <a href="" class="btn-visit">Visit</a>
+                        <a href="#" class="btn-visit">Visit</a>
                     </li>
                     <li class="new-tools-item">
                         <img src="pictures/jb_phpstorm.png" alt="phpstorm logo">
@@ -161,7 +159,7 @@
                         <p class="new-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <button type="button" class="like"></button>
                         <button type="button" class="download"></button>
-                        <a href="" class="btn-visit">Visit</a>
+                        <a href="#" class="btn-visit">Visit</a>
                     </li>
                     <li class="new-tools-item">
                         <img src="pictures/jb_toolbox_app.png" alt="toolbox logo">
@@ -170,7 +168,7 @@
                         <p class="new-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <button type="button" class="like"></button>
                         <button type="button" class="download"></button>
-                        <a href="" class="btn-visit">Visit</a>
+                        <a href="#" class="btn-visit">Visit</a>
                     </li>
                     <li class="new-tools-item">
                         <img src="pictures/procreate.png" alt="procreate logo">
@@ -179,18 +177,18 @@
                         <p class="new-tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <button type="button" class="like"></button>
                         <button type="button" class="download"></button>
-                        <a href="" class="btn-visit">Visit</a>
+                        <a href="#" class="btn-visit">Visit</a>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="reviews">
-            <div class="container">
+            <div class="container reviews-container">
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide reviews-box">
                             <div class="reviews-wrap">
-                                <img src="./pictures/Ronalds.png" alt="Review creator" />
+                                <img src="./pictures/Ronalds.png" alt="Review creator" class="reviews-creators" />
                                 <div class="reviews-info">
                                     <p class="reviews-name">Ronald Richards</p>
                                     <p class="reviews-position">Product Manager</p>
@@ -205,7 +203,9 @@
                         </div>
                         <div class="swiper-slide reviews-box">
                             <div class="reviews-wrap">
-                                <img src="./pictures/Ronalds.png" alt="Review creator" />
+                                <img src="./pictures/female_worker.png" alt="Review creator"
+                                style="width: 420px; height: 492px;"
+                                />
                                 <div class="reviews-info">
                                     <p class="reviews-name">Julia Kriwald</p>
                                     <p class="reviews-position">HR Specialist</p>
@@ -220,7 +220,9 @@
                         </div>
                         <div class="swiper-slide reviews-box">
                             <div class="reviews-wrap">
-                                <img src="./pictures/Ronalds.png" alt="Review creator" />
+                                <img src="./pictures/male_worker.png" alt="Review creator" 
+                                style="width: 440px; height: 482px;"
+                                />
                                 <div class="reviews-info">
                                     <p class="reviews-name">John Mckenzie</p>
                                     <p class="reviews-position">Designer Manager</p>
@@ -239,35 +241,36 @@
             </div>
         </section>
         <section class="contributor">
-            <div class="container">
+            <div class="container contributor-container">
                 <h2 class="contributor-title">Become a contributor?</h2>
                 <p class="contributor-text">Join us and get tips & tricks to become a great Designer and Developer</p>
                 <form class="contributors-form">
                     <input class="contributors-input" type="text" placeholder="Enter your email..." />
-                    <button class="contributors-btn-search" type="submit">Search</button>
+                    <button type="button" class="contributor-button">Join Us</button>
                 </form>
-                <button type="button" class="contributor-button">Join Us</button>
             </div>
         </section>
     </main>
     <footer>
         <div class="container footer-container">
-            <a href="#"><img src="pictures/antools-logo.svg" alt="logo" class="footer-logo">antools.</a>
+            <div class="footer-wrap">
+                <div class="footer-desc-title">
+            <a href="#" class="footer-title"><img src="pictures/antools-logo.svg" alt="logo" class="footer-logo">antools.</a>
             <p class="footer-text">Copyright 2021. Antools</p>
             <p class="footer-description">Antool is a web collection of information on paid or free Design and Development tools</p>
-            <div class="footer-wrap">
+                </div>
                 <div class="footer-contact">
                   <h3 class="contact-title">Contact Us</h3>
                   <address>
                     <ul class="contact-list">
                       <li class="contact-item">
-                        <a href="tel:+621987463">+621987463</a>
+                        <a href="tel:+621987463" class="contact-link">+621987463</a>
                       </li>
                       <li class="contact-item">
-                        <a href=""> M Building, No.10 A</a>
+                        <a href="#"  class="contact-link"> M Building, No.10 A</a>
                       </li>
                       <li class="contact-item">
-                        <a href="mailto:antools@awesome.com">antools@awesome.com</a>
+                        <a href="mailto:antools@awesome.com" class="contact-link">antools@awesome.com</a>
                       </li>
                     </ul>
                   </address>
