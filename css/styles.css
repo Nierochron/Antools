@@ -51,11 +51,10 @@ body{
 }
 .header-login-btn{
     color: var(--button-color);
+    padding: 12px 28px;
     background-color: transparent;
     font-size: 16px;
     font-weight: 600;
-    line-height: 1.5px;
-    margin-right: 41px;
 }
 .header-signup-btn{
     color: var(--button-color);
@@ -63,7 +62,6 @@ body{
     padding: 12px 28px;
     font-size: 16px;
     font-weight: 600;
-    line-height: 1.5px;
     border-radius: 8px;
 }
 .header-login-btn:hover{
@@ -74,6 +72,7 @@ body{
     background-color: var(--primary-background-color);
     color: var(--background-button-color);
     transition: all 0.5s ease;
+    border: 1px solid rgb(255, 255, 255);
 }
     /* main */ 
     /* hero */
@@ -143,7 +142,6 @@ body{
   border: none;
   border-radius: 8px;
   font-weight: 600;
-  line-height: 1.5;
   font-size: 16px;
   cursor: pointer;
   color: var(--primary-title-color);
@@ -248,14 +246,11 @@ body{
     width: 42px;
 }
 .popular-btn-visit{
-    width: 106px;
-    height: 42px;
     font-weight: 600;
     color: var(--primary-text-color);
     font-size: 16px;
-    line-height: 1.5;
     border-radius: 8px;
-    padding: 9px 35px;
+    padding: 13px 35px;
 }
 .popular-btn-visit:hover{
     background-color: var(--background-button-color);
@@ -272,7 +267,6 @@ body{
     border-radius: 8px;
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.5;
 }
     /* brand */
 .brand-container{
@@ -325,7 +319,12 @@ body{
     border-radius: 8px;
     font-weight: 500;
     font-size: 18px;
-    line-height: 1.5;
+}
+.new-tools-button:hover{
+    background-color: var(--primary-background-color);
+    color: var(--background-button-color);
+    transition: all 0.5s ease;
+    border: 1px solid rgb(255, 255, 255);
 }
 .new-tools-list{
     display: flex;
@@ -336,6 +335,15 @@ body{
 .new-tools-item{
     flex-basis: calc((100% - 24px) / 2); 
     border-radius: 15px;
+}
+.new-tools-item:hover{
+    background-image: radial-gradient(
+        circle at left top,
+        rgba(255, 72, 66, 0.1),
+        rgba(44, 53, 61, 0.3),
+        rgba(44, 53, 61, 0.2),
+        rgba(44, 53, 61, 0.2)
+        );
 }
 .new-tools-subtitle{
     color: var(--button-color);
@@ -358,10 +366,23 @@ body{
     height: 60px;
 }
 .btn-visit{
-    color: var(--primary-text-color);
     font-weight: 600;
+    color: var(--primary-text-color);
     font-size: 16px;
-    line-height: 1.5;
+    border-radius: 8px;
+    padding: 13px 35px;
+}
+.btn-visit:hover{
+    background-color: var(--background-button-color);
+    color: var(--primary-title-color);
+}
+.new-tools-box{
+    display: flex;
+    margin-left: 26px;
+}
+.new-tools-wrap-bottom{
+    display: flex;
+    justify-content: space-between;
 }
     /* reviews */
 .reviews-container{
@@ -440,7 +461,6 @@ body{
     border: none;
     border-radius: 8px;
     font-weight: 600;
-    line-height: 1.5;
     font-size: 16px;
     cursor: pointer;
     color: var(--primary-title-color);
