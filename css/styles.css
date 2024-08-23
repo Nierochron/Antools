@@ -23,30 +23,27 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.header-logo{
-    content: "";
-    margin-right: 21px;
-    display: inline-flex;
+.header-logo-img{
+    margin-right: 15px;
 }
-.header-title{
+.header-logo{
     color: var(--primary-title-color);
     font-weight: 600;
     font-size: 22px;
     line-height: 1.5;
 }
-.header-title:hover{
+.header-logo:hover{
     text-decoration: underline;
 }
 .nav-link{
     color: var(--primary-text-color);
+    transition: all 0.5s ease;
 }
 .nav-link:hover{
     color: var(--background-button-color);
 }
 .nav-list{
     display: flex;
-    justify-content: center;
-    margin-top: 12px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -63,8 +60,7 @@ body{
 .header-signup-btn{
     color: var(--button-color);
     background-color: var(--background-button-color);
-    width: 118px;
-    height: 48px;
+    padding: 12px 28px;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.5px;
@@ -72,17 +68,21 @@ body{
 }
 .header-login-btn:hover{
     color: var(--background-button-color);
+    transition: all 0.5s ease;
 }
 .header-signup-btn:hover{
     background-color: var(--primary-background-color);
     color: var(--background-button-color);
+    transition: all 0.5s ease;
 }
     /* main */ 
     /* hero */
+.hero{
+    padding-top: 46px;
+}
 .hero-title{
     color: var(--primary-title-color);
     width: 600px;
-    margin-top: 178px;
     margin-bottom: 30px;
     font-weight: 500;
     font-size: 50px;
@@ -174,10 +174,9 @@ body{
     font-weight: 500;
     font-size: 48px;
     line-height: 1.3;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 .popular-text{
-    height: 60px;
     width: 427px;
     text-align: center;
     margin: auto;
@@ -185,7 +184,6 @@ body{
     font-weight: 500;
     font-size: 18px;
     line-height: 1.7;
-    padding-bottom: 85px;
 }
 .popular-list{
     display: flex;
@@ -208,14 +206,12 @@ body{
     border-radius: 15px;
 }
 .popular-item-title{
-    margin-left: 80px;
     font-weight: 500;
     color: var(--button-color);
     font-size: 24px;
     line-height: 1.5;
 }
 .popular-item-category{
-    margin-left: 80px;
     font-weight: 400;
     color: rgba(255, 165, 55, 0.55);
     font-size: 18px;
@@ -227,26 +223,43 @@ body{
     font-size: 16px;
     line-height: 1.9;
 }
+.popular-box{
+    display: flex;
+    margin-bottom: 30px;
+}
+.popular-wrap-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.popular-title-box{
+    margin-left: 30px;
+}
 .like{
     background-image: url(../pictures/like.svg);
     background-color: transparent;
     height: 42px;
     width: 42px;
-    display: inline-block;
 }
 .download{
     background-image: url(../pictures/download.svg);
     background-color: transparent;
     height: 42px;
     width: 42px;
-    display: inline-block;
 }
 .popular-btn-visit{
-    margin-left: 165px;
+    width: 106px;
+    height: 42px;
     font-weight: 600;
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.5;
+    border-radius: 8px;
+    padding: 9px 35px;
+}
+.popular-btn-visit:hover{
+    background-color: var(--background-button-color);
+    color: var(--primary-title-color);
 }
 .popular-btn-load{
     margin: 0 auto;
@@ -263,7 +276,7 @@ body{
 }
     /* brand */
 .brand-container{
-    padding: 82px 56px 56px;
+    padding: 55px 82px;
     border-radius: 15px;
     background-image: radial-gradient(
     circle at left top,
@@ -287,7 +300,8 @@ body{
 }
     /* new tools */
 .new-tools-container{
-    padding-bottom: 200px;
+    padding-top: 200px;  
+    padding-bottom: 170px;
 }
 .new-tools-title{
     color: var(--primary-title-color);
@@ -295,22 +309,19 @@ body{
     font-size: 48px;
     line-height: 1.3;
     margin-bottom: 30px;
-    margin-top: 220px;
 }
 .new-tools-desk{
     font-weight: 500;
     color: var(--primary-text-color);
     font-size: 18px;
     line-height: 1.7;
-    height: 90px;
     width: 427px;
     margin-bottom: 60px;
 }
 .new-tools-button{
     background-color: var(--background-button-color);
     color: var(--primary-title-color);
-    width: 198px;
-    height: 58px;
+    padding: 9px 35px;
     border-radius: 8px;
     font-weight: 500;
     font-size: 18px;
@@ -323,10 +334,8 @@ body{
     row-gap: 50px;
 }
 .new-tools-item{
-    width: 288px;
-    height: 284px;
+    flex-basis: calc((100% - 24px) / 2); 
     border-radius: 15px;
-    flex-basis:calc((100% - 50px) / 2);
 }
 .new-tools-subtitle{
     color: var(--button-color);
@@ -387,7 +396,7 @@ body{
 }
     /* contributor */
 .contributor-container{
-    padding-bottom: 310px;
+    padding: 240px 0;
 }
 .contributor-title{
     text-align: center;
@@ -395,18 +404,16 @@ body{
     font-weight: 500;
     font-size: 48px;
     line-height: 1.3;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 .contributor-text{
     text-align: center;
-    margin: auto;
-    padding-bottom: 200px;
+    margin: 0 auto 100px auto;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 18px;
     line-height: 1.7;
     width: 427px;
-    height: 60px;
 }
 .contributors-input {
     margin: auto;
@@ -508,7 +515,10 @@ body{
     font-size: 16px;
     line-height: 1.5;
 }
-.footer-wrap{
+.footer{
+    padding: 73px 98px;
+}
+.footer-container{
     display: flex;
     justify-content: space-between;
 }
