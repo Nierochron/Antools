@@ -80,6 +80,17 @@ body{
 .hero{
     padding-top: 46px;
 }
+.hero::after{
+    content: "";
+    background-image: url(../pictures/Illustration.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0%;
+    top: 25%;
+    height: 892px;
+    width: 589px;
+    display: inline-block;
+}
 .hero-title{
     color: var(--primary-title-color);
     width: 600px;
@@ -110,16 +121,6 @@ body{
 }
 .hero-form{
     margin-bottom: 110px;
-}
-.decoration{
-    background-image: url(../pictures/Illustration.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 0%;
-    top: 25%;
-    height: 892px;
-    width: 589px;
-    display: inline-block;
 }
 .hero-form{
   width: 498px;
