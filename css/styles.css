@@ -59,6 +59,7 @@ body{
 .header-signup-btn{
     color: var(--button-color);
     background-color: var(--background-button-color);
+    border: 1px solid var(--background-button-color); 
     padding: 12px 28px;
     font-size: 16px;
     font-weight: 600;
@@ -113,6 +114,9 @@ body{
 .decoration{
     background-image: url(../pictures/Illustration.png);
     background-repeat: no-repeat;
+    position: absolute;
+    right: 0%;
+    top: 25%;
     height: 892px;
     width: 589px;
     display: inline-block;
@@ -150,8 +154,8 @@ body{
 }
 
 .hero-btn-search:hover {
-  color: var(--accent-color);
-  outline: 1px solid var(--primary-title-color);
+  color: var(--background-button-color);
+  outline: 1px solid var(--background-button-color);
   background-color: transparent;
 }
 .hero-input::placeholder {
@@ -268,6 +272,11 @@ body{
     font-weight: 500;
     font-size: 20px;
 }
+.popular-btn-load:hover{
+    color: var(--primary-title-color);
+    background-color: var(--background-button-color);
+    transition: all 0.5s ease;
+}
     /* brand */
 .brand-container{
     padding: 55px 82px;
@@ -323,8 +332,8 @@ body{
 .new-tools-button:hover{
     background-color: var(--primary-background-color);
     color: var(--background-button-color);
+    border: 1px solid  var(--background-button-color);
     transition: all 0.5s ease;
-    border: 1px solid rgb(255, 255, 255);
 }
 .new-tools-list{
     display: flex;
@@ -364,7 +373,6 @@ body{
     font-weight: 400;
     font-size: 14px;
     line-height: 2.1;
-    width: 245px;
 }
 .btn-visit{
     font-weight: 600;
@@ -395,7 +403,7 @@ body{
     margin-left: 34px;
 }
     /* reviews */
-.reviews-container{
+/*.reviews-container{
     padding-bottom: 263px;
 }
 .reviews-name{
@@ -424,10 +432,61 @@ body{
 }
 .reviews-creators{
     padding-left: 221px;
+}*/
+.reviews-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.reviews-wrap {
+    position: relative;
+    width: 392px;
+    height: 492px;
+}
+.reviews-wrap > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.reviews-info {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    padding: 10px 22px;
+    width: 265px;
+    border-radius: 8px;
+    border: 1px rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(to bottom right, #222, #444);
+}
+.reviews-name {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.39px;
+    color: var(--light-subtitle-color);
+}
+.reviews-position {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.reviews-text {
+    font-family: "Roboto", sans-serif;
+    width: 393px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.2;
+    letter-spacing: 0.21px;
+    color: var(--button-color);
 }
     /* contributor */
-.contributor-container{
+.contributor{
     padding: 240px 0;
+}
+.contributor-container{
+    padding-bottom: 310px;
 }
 .contributor-title{
     text-align: center;
@@ -435,11 +494,13 @@ body{
     font-weight: 500;
     font-size: 48px;
     line-height: 1.3;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
 }
 .contributor-text{
+    margin: auto;  
+    padding-bottom: 200px; 
+    height: 60px;
     text-align: center;
-    margin: 0 auto 100px auto;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 18px;
@@ -483,13 +544,13 @@ body{
     background-color: transparent;
 }
     /* footer */
-.footer-logo{
+.footer-logo-img{
     background-color: var(--background-button-color);
     margin-right: 12px;
     padding: 8px;
     border-radius: 8px;
 }
-.footer-title{
+.footer-logo{
     color: var(--primary-title-color);
     font-weight: 600;
     line-height: 1.5;
@@ -500,6 +561,8 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    margin-top: 25px;
+    margin-bottom: 21px;
 }
 .footer-description{
     color: var(--primary-text-color);
@@ -507,13 +570,13 @@ body{
     font-size: 14px;
     line-height: 1.8;
     width: 260px;
-    height: 75px;
 }
 .contact-title{
     color: var(--primary-title-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
+    margin-bottom: 20px;
 }
 .contact-link{
     color: var(--primary-text-color);
@@ -526,6 +589,7 @@ body{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
+    margin-bottom: 20px;
 }
 .categories-item{
     color: var(--primary-text-color);
@@ -538,6 +602,7 @@ body{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
+    margin-bottom: 20px;
 }
 .info-item{
     color: var(--primary-text-color);
