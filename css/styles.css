@@ -500,9 +500,6 @@ body{
 .contributor{
     padding: 240px 0;
 }
-.contributor-container{
-    padding-bottom: 310px;
-}
 .contributor-title{
     text-align: center;
     color: var(--primary-title-color);
