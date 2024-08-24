@@ -17,6 +17,20 @@ body{
 .header{
     padding-top: 26px;
     padding-bottom: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    z-index: 2;
+    background-image: radial-gradient(
+    circle,
+    rgb(48, 54, 60),
+    rgb(32, 42, 50),
+    rgb(38, 45, 51),
+    rgb(50, 44, 41)
+);
 }
 .header-container{
     display: flex;
@@ -78,7 +92,7 @@ body{
     /* main */ 
     /* hero */
 .hero{
-    padding-top: 46px;
+    padding-top: 180px;
 }
 .hero::after{
     content: "";
@@ -86,7 +100,7 @@ body{
     background-repeat: no-repeat;
     position: absolute;
     right: 0%;
-    top: 25%;
+    top: 170px;
     height: 892px;
     width: 589px;
     display: inline-block;
