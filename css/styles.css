@@ -72,7 +72,7 @@ body{
     background-color: var(--primary-background-color);
     color: var(--background-button-color);
     transition: all 0.5s ease;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid var(--background-button-color); 
 }
     /* main */ 
     /* hero */
@@ -294,8 +294,8 @@ body{
 }
     /* new tools */
 .new-tools-container{
-    padding-top: 200px;  
-    padding-bottom: 170px;
+    display: flex;
+    justify-content: space-between;
 }
 .new-tools-title{
     color: var(--primary-title-color);
@@ -315,7 +315,7 @@ body{
 .new-tools-button{
     background-color: var(--background-button-color);
     color: var(--primary-title-color);
-    padding: 9px 35px;
+    padding: 16px 40px;
     border-radius: 8px;
     font-weight: 500;
     font-size: 18px;
@@ -335,6 +335,7 @@ body{
 .new-tools-item{
     flex-basis: calc((100% - 24px) / 2); 
     border-radius: 15px;
+    padding: 22px 29px 28px 21px;
 }
 .new-tools-item:hover{
     background-image: radial-gradient(
@@ -353,6 +354,7 @@ body{
 }
 .new-tools-category{
     color: rgba(255, 165, 55, 0.55);
+    margin-top: 3px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
@@ -363,7 +365,6 @@ body{
     font-size: 14px;
     line-height: 2.1;
     width: 245px;
-    height: 60px;
 }
 .btn-visit{
     font-weight: 600;
@@ -378,11 +379,20 @@ body{
 }
 .new-tools-box{
     display: flex;
-    margin-left: 26px;
 }
 .new-tools-wrap-bottom{
     display: flex;
     justify-content: space-between;
+}
+.new-tools{
+    padding-top: 200px;
+    padding-bottom: 170px;
+}
+.new-tools-app{
+    max-width: 601px;
+}
+.new-tools-app-category{
+    margin-left: 34px;
 }
     /* reviews */
 .reviews-container{
